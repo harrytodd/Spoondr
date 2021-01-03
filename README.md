@@ -232,40 +232,39 @@ This page needed fields where you can edit everything about your profile, these 
 The below code is the way I handled the interests:
 
 ##### HTML
-```reactjs
-{/* ***** INTERESTS ***** */}
-	<label>My Interests</label>
-	<div className="interestsOuter">
-		{currInterests.map((el, i) => {
-			return <div 
-				className="interest" 
-				onClick={(e) => handleRemoveInterests(el)} key={i}>{el.name}
-			</div>
-		})}
-	</div>
+```html
+<label>My Interests</label>
+<div className="interestsOuter">
+	{currInterests.map((el, i) => {
+		return <div 
+			className="interest" 
+			onClick={(e) => handleRemoveInterests(el)} key={i}>{el.name}
+		</div>
+	})}
+</div>
 
- 	<label>Click To Add Interests</label>
-  	<div className="interestsOuter">
-     	{interests.map((el, i) => {
-         	return <div 
-         		className="interest" 
-         		onClick={(e) => handleAddInterests(el)} key={i}>{el.name}
-         	</div>
-     	})}
- 	</div>
+<label>Click To Add Interests</label>
+<div className="interestsOuter">
+	{interests.map((el, i) => {
+     	return <div 
+     		className="interest" 
+         	onClick={(e) => handleAddInterests(el)} key={i}>{el.name}
+      	</div>
+  	})}
+</div>
 
-	<label>Create Interest
-    	<input
-        	type="text"
-          onChange={(e) => updateText(e.target.value)}
-          onKeyUp={(e) => {
-            	if (e.key === 'Enter') {
-              	handleCreateInterest(e)
-            	}
-          }}
-          value={text}
-    	/>
- 	</label>
+<label>Create Interest
+	<input
+   		type="text"
+      	onChange={(e) => updateText(e.target.value)}
+      	onKeyUp={(e) => {
+       	if (e.key === 'Enter') {
+          	handleCreateInterest(e)
+         	}
+      	}}
+      	value={text}
+   	/>
+</label>
 ```
 ##### JavaScript
 ```javascript
@@ -307,21 +306,20 @@ This was a fairly simple functionality to get working, I just had to keep it ver
 Similarly to my Clique project, I used Cloudinary to deal with image uploading. The below HTML code was duplicated for each of the five images.
 
 ##### HTML
-```reactjs
-{/* ***** IMAGES ***** */}
-	<label>Image 1</label>
-	<img
-      	src={currUserImages.image1}
-     	alt="Upload"
-     	width="300"
-     	name="image1"
-     	onClick={(e) => handleImage(e.target.name)}
-  	/>
-  	{currUserImages.image1 && <button 
-  		name="image1" 
-  		onClick={(e) => removeImage(e.target.name)}
-  		>X</button>
-  	}
+```html
+<label>Image 1</label>
+<img
+	src={currUserImages.image1}
+	alt="Upload"
+	width="300"
+	name="image1"
+	onClick={(e) => handleImage(e.target.name)}
+/>
+{currUserImages.image1 && <button 
+	name="image1" 
+  	onClick={(e) => removeImage(e.target.name)}
+  	>X</button>
+}
 ``` 
 ##### JavaScript
 ```javascript
@@ -360,7 +358,7 @@ This, again, was fairly simple to put together, I just had to plug in the onClic
 One of my teammates and I worked on the functionality of the swipe page. In order to get the swipe mechanism working we used a library called 'TinderCard'. There was a steep learning curve with this library, but it was the simplest one we could find in the time we had.
 
 ##### HTML
-```reactjs
+```html
 <div className="cardContainer">
   	{filteredUsers.map((user, index) => {
       	swipeUserID = user.id
