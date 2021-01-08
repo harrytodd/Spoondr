@@ -444,3 +444,7 @@ Given the time period and that we had only been learning Python for a week previ
 
 You can view our project here --> ***[Spoondr](https://spoondr-project.herokuapp.com/)***  
 
+## Contributors
+- Harry Todd
+- [Lee Burgess](https://github.com/Budge23)
+- [Laura Harvey](https://github.com/lauracharvey)
