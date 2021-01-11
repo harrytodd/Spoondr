@@ -438,9 +438,9 @@ Extra features that we aimed to implement but ran out of time to were:
 	- We would use the post code you enter when signing up to show a large area instead of showing your exact location to make the whole experience more safe.
 - Gif sharing and website preview in chat.
 
-Given the time period and that we had only been learning Python for a week previous to beginning, I think we did a great job as a team and, even with the extra features not implemented, the app is fully functional and fun to use.
+From this project, above all the rest, I learned the most. Using a whole new language that we had only started learning a week prior, to then using it for a whole backend to the largest project yet was a great experience, but there were a lot of hurdles. I have learned to trust my team mates more and to be more confident in asking them questions instead of relying on myself or Google.
 
--
+Given the time period and that we had only been learning Python for a week prior to beginning, I think we did a great job as a team and, even with the extra features not implemented, the app is fully functional and fun to use.
 
 You can view our project here --> ***[Spoondr](https://spoondr-project.herokuapp.com/)***  
 
